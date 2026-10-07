@@ -1,78 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="./Styles/estilo.css">
 </head>
-<style>
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background-color: crimson;
-        padding: 40px 50px;
-        text-align: center;
-    }
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        text-align: center;
-        color: gold;
-        border-bottom: 2px solid;
-        margin: 20px 40px;
-    }
-
-    .container {
-        background-color: white;
-        border-radius: 20px;
-        padding: 8px 3px;
-    }
-
-   .container p {
-        color: gold;
-        text-align: center;
-        margin: 30px 20px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .btn-voltar {
-        display: inline-block;
-        margin-top: 30px;
-        background-color: white;
-        padding:  20px;
-        border-radius: 20px;
-        transition: 0.2s ease;
-
-    }
-
-    .btn-voltar:hover {
-        color: khaki;
-        border-color: khaki;
-        border: 4px solid;
-    }
-    .btn-voltar a {
-        color: gold;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-</style>
 <body>
-    <h1>Este site é um site de exemplo</h1>
-    <br>
-<div class="container">
-    <p>Neste site você encontrará apenas um exemplo de como é um site real e funcional.</p>
 
-    <p>O objetivo principal é entender como funciona a navegação entre outras páginas dentro da página principal.</p>
-</div>
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <a class="menu-link" href="index.html">Página Principal</a>
+            <a class="menu-link" href="sobre.html">Sobre mim</a>
+        </nav>
+    </header>
 
-<nav class="btn-voltar">
-    <a href="index.html" target="_self">Voltar para a Home</a>
-</nav>
+    <main class="apresentacao">
+        <section>
+            <div>
+                <h1 class="apresentacao-titulo">Sobre Mim</h1>
+                <br>
+                <p class="conteudo-texto">Meu nome é Vinicius, tenho 19 anos e estou começando na área da Programação Web Front-End. Por enquanto estou estudando CSS, logo começarei a estudar JavaScript.</p>
+            </div>
+        </section>
+        <img id="imagem-principal" src="Imagens/image_26bd66f9.jpg" alt="Vinicius Henrique" Title="Desenvolvedor Front-end">
+    </main>
+
+    <footer>Site desenvolvido por Vinicius Henrique | Todos os direitos reservados © Copyright 2026</footer>
+
 </body>
 </html>

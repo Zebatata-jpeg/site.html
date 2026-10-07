@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site com Flexbox</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./Styles/estilo.css"/>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1 class="cabecalho1">Meu site Flexbox</h1>
-            <nav class="menu-horizontal">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="sobre.html" target="_self">Sobre</a></li>
-                    <li><a href="conteudo.html" target="_self">Conteúdos</a></li>
-                    <li><a href="contato.html" target="_self">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-      <br><br>
-        <main>
-            <div class="conteudo-container">
-                <h1 class="cabecalho2">Bem-vindo ao meu site de exemplo Flexbox</h1>
-                <p>Este site utiliza um arquivo CSS separado, para criar o menu horizontal com Flexbox, além de uma aparência limpa e moderna.</p>
-                <p>as tags exigidas estão todas presentes: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;div&gt;</code>  (Container interno), <code>&lt;h1&gt;</code> entre outros.</p>
-                <p>O menu horizontal é obtido com <code> display: flex</code> na lista <code>&lt;ul&gt;</code>. O CSS externo facilita a manutenção e o aprendizado separado da estrutura e da apresentação.</p>
-              <p>Agora o <strong>HTML</strong> cuida do conteúdo e o CSS do visual. Basta salvar dois arquivos e direcionar o link para o arquivo correto.</p>
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <a class="menu-link" href="index.html">Página Principal</a>
+            <a class="menu-link" href="sobre.html">Sobre mim</a>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao-conteudo">
+            <div>
+                <h1 class="apresentacao-titulo"> Eleve seu negócio digital a outro nível com um front-end de qualidade </h1>
+                
+                <p class="apresentacao-paragrafo"><span>Olá sou Vinicius Henrique, </span> desenvolvedor front-end com especialidade em <strong> HTML, CSS e JavaScript.</strong> Ajudo pequenos negócios e designers a colocarem em prática boas idéias. </p>
+                
+                <div class="apresentacao-links">
+                    <h2 class="apresentacao-links-subtitulo"> Acesse minhas redes: </h2>
+                    <a class="apresentacao-links2" href="https://www.instagram.com" target="_blank"><img src="./imagens/instagram.png"> Instagram</a> <!-- 2. passo a alterar-->
+                    <a class="apresentacao-links2" href="https://www.linkedin.com" target="_blank"><img src="./Imagens/linkedin.png"> Linkedin</a>
+                    <a class="apresentacao-links2" href="https://github.com/Zebatata-jpeg" target="_blank"><img src="./Imagens/github.png"> Github</a>
+                </div>
             </div>
-        </main>
-        <br>
-        <footer>
-          <p>© 2026 exemplo de CSS externo | Menu horizontal flexbox</p>
-        </footer>
-    </div>
+        </section>
+        
+        <img id="imagem-principal" src="Imagens/image_26bd66f9.jpg" alt="Vinicius Henrique" Title="Desenvolvedor Front-end">
+    </main>
+
+    <footer> Site desenvolvido por Vinicius Henrique | Todos os direitos reservados © Copyright 2026</footer>
 </body>
 </html>
